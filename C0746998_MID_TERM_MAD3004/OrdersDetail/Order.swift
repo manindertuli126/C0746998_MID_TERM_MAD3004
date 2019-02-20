@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class Order {
+    
+    var orderID : Int!
+    var orderDate : Data!
+    var ProductArrat = [String]()
+    var orderTotal : Int!
+}

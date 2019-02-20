@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class Product {
+    
+    var productID : Int!
+    var productName : String!
+    var price : Double!
+    var quantity : Int!
+}
