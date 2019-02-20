@@ -8,12 +8,24 @@
 
 import Foundation
 
-class Product {
+class Product:iDisplay {
     
-    var productID : Int!
-    var productName : String!
-    var price : Double!
-    var quantity : Int!
+    var productID : String
+    var productName : String
+    var price : Double
+    var quantity : Int
     
+    init(productID:String, productName:String, price:Double, quantity:Int) {
+        self.productID = productID
+        self.productName = productName
+        self.price = price
+        self.quantity = quantity
+    }
     
+    func displayData() {
+        print("Product ID: \(self.productID)")
+        print("Product Name: \(self.productName)")
+        print("Product Price: \(self.price)")
+        print("Product Quantity: \(self.quantity)\n")
+    }
 }
