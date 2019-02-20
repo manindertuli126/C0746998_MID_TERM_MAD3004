@@ -12,6 +12,7 @@
 		9BE2A1EC221E1A620055909B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE2A1EB221E1A620055909B /* Product.swift */; };
 		9BE2A1F0221E1A8C0055909B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE2A1EF221E1A8C0055909B /* Order.swift */; };
 		9BE2A1F3221E1AA20055909B /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE2A1F2221E1AA20055909B /* IDisplay.swift */; };
+		9BE2A1F7221E1D1B0055909B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE2A1F6221E1D1B0055909B /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		9BE2A1EB221E1A620055909B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9BE2A1EF221E1A8C0055909B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		9BE2A1F2221E1AA20055909B /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
+		9BE2A1F6221E1D1B0055909B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				9BE2A1EE221E1A7B0055909B /* OrdersDetail */,
 				9BE2A1EA221E1A510055909B /* ProductsDetails */,
 				9BE2A1DA221E19220055909B /* main.swift */,
+				9BE2A1F6221E1D1B0055909B /* Extensions.swift */,
 			);
 			path = C0746998_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE2A1E8221E1A3E0055909B /* Manufacturer.swift in Sources */,
+				9BE2A1F7221E1D1B0055909B /* Extensions.swift in Sources */,
 				9BE2A1DB221E19220055909B /* main.swift in Sources */,
 				9BE2A1F0221E1A8C0055909B /* Order.swift in Sources */,
 				9BE2A1F3221E1AA20055909B /* IDisplay.swift in Sources */,

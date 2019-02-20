@@ -1,5 +1,5 @@
 //
-//  Product.swift
+//  Extensions.swift
 //  C0746998_MID_TERM_MAD3004
 //
 //  Created by MacStudent on 2019-02-20.
@@ -8,12 +8,8 @@
 
 import Foundation
 
-class Product {
-    
-    var productID : Int!
-    var productName : String!
-    var price : Double!
-    var quantity : Int!
-    
-    
+extension Int{
+    func currency() ->String{
+        return "$ \(self)"
+    }
 }
