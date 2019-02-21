@@ -37,3 +37,6 @@ order.getKeyAndValue(orderID: order3.orderID, productList: order3.productArray)
 order.displayOrderDictionary()
 
 print("*****")
+order.getOrderById(orderID: order2.orderID)
+order.getOrderById(orderID: 333)
+order.getOrderById(orderID: 111)
