@@ -21,4 +21,9 @@ for s in totalProducts{
 
 print("*****")
 
-var order1 = Order()
+var order1 = Order(orderID: 111, productArray: [product1,product2,product3])
+order1.displayData()
+var order2 = Order(orderID: 222, productArray: [product3,product2,product5])
+order2.displayData()
+var order3 = Order(orderID: 333, productArray: [product5,product2,product3,product4])
+order3.displayData()

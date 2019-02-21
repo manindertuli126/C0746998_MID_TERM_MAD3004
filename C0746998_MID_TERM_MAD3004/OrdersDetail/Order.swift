@@ -8,23 +8,29 @@
 
 import Foundation
 
-class Order{
+class Order : iDisplay{
     
     var orderID : Int
     var orderDate = Date()
     var productArray = [Product]()
     var orderTotal : Double!
     
-    init(orderID:Int) {
+    init(orderID:Int, productArray : [Product]) {
         self.orderID = orderID
-    }
-    
-    func calculateTotalPrice(productArray : [Product]){
         self.productArray = productArray
         var total = 0.0
         for k in 0..<productArray.count{
             total += productArray[k].price
         }
         self.orderTotal = total
+    }
+    
+    func displayData() {
+        print("Order ID: \(orderID)")
+        print("Order Date: \(orderDate)")
+        for j in 0..<productArray.count{
+            print("Product: \(productArray[j].productName)")
+        }
+        print("Order Total: \(orderTotal!)\n")
     }
 }
