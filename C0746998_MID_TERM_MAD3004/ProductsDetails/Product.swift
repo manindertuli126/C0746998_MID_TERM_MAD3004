@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Product:iDisplay {
+class Product {
     
     var productID : String
     var productName : String

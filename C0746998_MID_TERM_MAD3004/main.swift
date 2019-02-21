@@ -29,3 +29,5 @@ var order3 = Order(orderID: 333, productArray: [product5,product2,product3,produ
 order3.displayData()
 
 print("*****")
+
+order1.getKeyAndValue(orderID: order1.orderID, productList: order1.productArray)
