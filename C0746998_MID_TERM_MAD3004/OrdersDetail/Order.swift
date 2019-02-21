@@ -14,7 +14,7 @@ class Order : iDisplay{
     var orderDate = Date()
     var productArray = [Product]()
     var orderTotal : Double!
-    var orderDictionary = Dictionary<Int, [Product]>()
+    var orderDictionary = Dictionary<Int, String>()
     
     init(orderID:Int, productArray : [Product]) {
         self.orderID = orderID
@@ -36,7 +36,11 @@ class Order : iDisplay{
     }
     
     func getKeyAndValue(orderID:Int, productList:[Product]){
-        self.orderDictionary.updateValue(productList, forKey: orderID)
+        var addProductList = String()
+        for j in 0..<productList.count{
+            addProductList += productList[j].productName+", "
+        }
+        self.orderDictionary.updateValue(addProductList, forKey: orderID)
     }
     
     func displayOrderDictionary() {
