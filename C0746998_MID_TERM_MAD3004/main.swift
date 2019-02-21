@@ -19,3 +19,6 @@ for s in totalProducts{
     s.displayData()
 }
 
+print("*****")
+
+var order1 = Order()
