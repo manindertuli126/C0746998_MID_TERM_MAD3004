@@ -15,11 +15,11 @@ class Product:iDisplay {
     var price : Double
     var quantity : Int
     
-    init(productID:String, productName:String, price:Double, quantity:Int) {
+    init(productID:String, productName:String, price:Double) {
         self.productID = productID
         self.productName = productName
         self.price = price
-        self.quantity = quantity
+        self.quantity = 1
     }
     
     func displayData() {
