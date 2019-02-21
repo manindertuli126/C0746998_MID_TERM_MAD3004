@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Product {
+class Product:iDisplay {
     
     var productID : String
     var productName : String
@@ -25,7 +25,7 @@ public class Product {
     func displayData() {
         print("Product ID: \(self.productID)")
         print("Product Name: \(self.productName)")
-        print("Product Price: \(self.price)")
+        print("Product Price: \(self.price.currency())")
         print("Product Quantity: \(self.quantity)\n")
     }
 }

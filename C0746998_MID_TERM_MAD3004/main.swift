@@ -30,9 +30,10 @@ order3.displayData()
 
 print("*****")
 
-order1.getKeyAndValue(orderID: order1.orderID, productList: order1.productArray)
-order1.displayOrderDictionary()
-order2.getKeyAndValue(orderID: order2.orderID, productList: order2.productArray)
-order2.displayOrderDictionary()
-order3.getKeyAndValue(orderID: order3.orderID, productList: order3.productArray)
-order3.displayOrderDictionary()
+var order = Order()
+order.getKeyAndValue(orderID: order1.orderID, productList: order1.productArray)
+order.getKeyAndValue(orderID: order2.orderID, productList: order2.productArray)
+order.getKeyAndValue(orderID: order3.orderID, productList: order3.productArray)
+order.displayOrderDictionary()
+
+print("*****")

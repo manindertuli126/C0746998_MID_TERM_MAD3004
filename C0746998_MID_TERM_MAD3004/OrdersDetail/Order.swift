@@ -10,11 +10,15 @@ import Foundation
 
 class Order : iDisplay{
     
-    var orderID : Int
+    var orderID : Int!
     var orderDate = Date()
     var productArray = [Product]()
     var orderTotal : Double!
     var orderDictionary = Dictionary<Int, String>()
+    
+    init(){
+        
+    }
     
     init(orderID:Int, productArray : [Product]) {
         self.orderID = orderID
@@ -27,12 +31,12 @@ class Order : iDisplay{
     }
     
     func displayData() {
-        print("Order ID: \(orderID)")
+        print("Order ID: \(orderID!)")
         print("Order Date: \(orderDate)")
         for j in 0..<productArray.count{
             print("Product: \(productArray[j].productName)")
         }
-        print("Order Total: \(orderTotal!)\n")
+        print("Order Total: \(orderTotal!.currency())\n")
     }
     
     func getKeyAndValue(orderID:Int, productList:[Product]){
@@ -47,6 +51,7 @@ class Order : iDisplay{
         for (k,v) in orderDictionary{
             print("Dictionary Key: \(k), Value: \(v)")
         }
+        print("\n")
     }
 
 }

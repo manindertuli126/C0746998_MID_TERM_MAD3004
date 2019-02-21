@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension Int{
+extension Double{
     func currency() ->String{
-        return "$ \(self)"
+        return "$\(self)"
     }
 }
